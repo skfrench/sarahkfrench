@@ -1,0 +1,255 @@
+<html>
+<head>
+  <title>S.K. French</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> 
+<style>
+ 
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 0px;
+  background: #273037;
+}
+
+
+
+.header-cont {
+    width:100%;
+    min-width:500px;
+ float:left;
+ top:0px;
+    background-color: #14181c;
+}
+ .header {
+   
+  text-align: left;
+  height:100px;
+  padding: 0px;
+}
+
+
+li a {
+  color:white;
+}
+ul {
+  width:100%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+
+}
+li {
+  position:relative; /*important*/
+  float:left; /*important*/
+  display:inline; /* also important here */
+  list-style-type:none;
+  width:100px;
+  padding:0;
+  margin:0;
+  margin-bottom:10px; /* Seperate each item vertically */
+}
+li .desc {
+  position:absolute; /* Important */
+  width:100%; /* Important */
+  bottom:33%; /* Important */
+  left:0;
+  background-color:rgba(0, 0, 0, 0);
+  filter:alpha(opacity=50);
+}
+li .desc div {
+  padding:6px;
+  text-align:center;
+}
+li img {
+  vertical-align:top;
+  border:0px solid gray; /* or 0px */
+}
+li:nth-child(even) {
+  margin-left:20px;
+  margin-right:20px; /* Seperate each item vertically */
+}
+li:nth-child(odd) {
+  margin-right:20px
+  margin-left:20px; /* Seperate each item vertically */
+}
+
+
+
+.leftcolumn {   
+  
+  width: 55%;
+  background-color:#273037;
+  margin-top:0px;
+  padding-left:0;
+  float:left;
+  height:630;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  background-color: #273037;
+  margin-top:0px;
+  height:450;
+
+  
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+h1 {
+  font-size: 20px;
+  color: #95B8BB;
+  margin:20;
+  
+}
+
+h2 {
+  font-size: 35px;
+  color: #95B8BB;
+}
+
+h3 {
+  font-size: 20px;
+  color: #D3D3D3;
+  margin:0;
+}
+
+h4 {
+  font-size: 17px;
+  color: #949595;
+  margin:0;
+}
+
+h5 {
+  font-size: 20px;
+  color: #949595;
+  margin:0;
+}
+
+h6 {
+  font-size: 20px;
+  color: #D3D3D3;
+  margin:0;
+  padding-left:15%;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .footer {   
+    width: 100%;
+    padding: 0;
+    min-width:500px;
+
+  }
+}
+
+
+#name {
+text-align:left;
+    padding:20px;
+
+
+}
+</style>
+</head>
+<body>
+
+ <div class="header-cont" id="name"">
+ <ul><li><h1>S. K. French</li></h1>
+  <li>
+    <a href="index.html">
+      <img src="icons/home.png" alt="home" width="100">
+      <div  class="desc"> <!-- This extra div is required to set margin/padding for text below.-->
+<!--Otherwise the below one leak out to right side -->
+        <div>Home</div>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="research.html">
+      <img src="icons/dfly.png" alt="Research" width="100">
+      <div  class="desc">
+        <div>Research</div>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="publications.html">
+      <img src="icons/lake.png" alt="Publications" width="100">
+      <div  class="desc">
+        <div>Publications</div>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="cv.html">
+      <img src="icons/frog.png" alt="Curriculum Vitae" width="100">
+      <div  class="desc">
+        <div>CV</div>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="contact.html">
+      <img src="icons/bay.png" alt="Contact" width="100">
+      <div  class="desc">
+        <div>Contact</div>
+      </div>
+    </a>
+  </li>
+</ul></div>
+
+<div class="leftcolumn">
+     <br><div align="center"><img src="icons/me2018.png" width="200" height="200">
+  <h2>Sarah French</h2>
+  <h5>Aquatic Ecologist
+    <br>Postdoctoral Fellow
+    <br>University of Waterloo </h5>
+     <h2><p>Education</p></h2>
+  <div align="left"><h6><img src="icons/grad.png" width="20" height="20"> Ph.D. in Aquatic Ecology
+
+  <p><img src="icons/grad.png" width="20" height="20"> M.Sc. in Aquatic Ecology
+  
+  <p><img src="icons/grad.png" width="20" height="20"> B.Sc.(Env.) in Natural Resources Management</h6>
+
+</h4></div>
+    </div></div>
+  
+  <div class="rightcolumn">
+       <h2>My Research</h2>
+  <p><h3>My research integrates behavioural, community, and landscape ecology to test how species respond to environmental heterogeneity. Specifically, I look at how both aquatic and terrestrial environmental conditions influence species' distributions and behaviour.</h3>
+   
+    <h2>Research Interests</h2>
+  <p><h3>&bull; Aquatic-terrestrial linkages
+<br>&bull; Habitat selection
+<br>&bull; Aquatic macroinvertebrates
+<br>&bull; Complex life histories
+<br>&bull; Dispersal and habitat connectivity
+<br>&bull; Habitat and species monitoring and conservation</h3>
+  <p>
+<br>
+  <div style="height:100%, background-color:#273037", align="left"><a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark" data-chrome=“transparent” data-link-color="#FAB81E" href="https://twitter.com/SK_French?ref_src=twsrc%5Etfw">Tweets by SK_French</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <br><h4><p>&#169; 2014-2019. Last updated 2019.</h4><br><br>
+  </div>
+
+  
+
+
+
+</body>
+</html>
+
