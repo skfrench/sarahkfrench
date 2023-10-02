@@ -16,15 +16,16 @@ body {
 
 
 .header-cont {
-    width:660px;
- float:left;
+    min-width:660px;
+ float:center;
  top:0px;
     background-color: #14181c;
 border-radius: 25px;
-margin-left:10px;
+margin-left:10%;
+     margin-right:10%;
+     
 }
  .header {
-   
   text-align: left;
   height:100px;
   padding: 0px;
@@ -35,6 +36,7 @@ li a {
   color:white;
 }
 ul {
+  text-align: center;
   width:100%;
   padding:0;
   margin:0;
@@ -43,13 +45,13 @@ ul {
 }
 li {
   position:relative; /*important*/
-  float:left; /*important*/
-  display:inline; /* also important here */
+  float:center; /*important*/
+  display:inline-block;  also important here 
   list-style-type:none;
   width:100px;
   padding:0;
-  margin:0;
-  left:5%;
+  margin:auto;
+  
   margin-bottom:0px; /* Seperate each item vertically */
 }
 li .desc {
@@ -69,12 +71,12 @@ li img {
   border:0px solid gray; /* or 0px */
 }
 li:nth-child(even) {
-  margin-left:20px;
-  margin-right:20px; /* Seperate each item vertically */
+  margin-left:5%;
+  margin-right:5%; /* Seperate each item vertically */
 }
 li:nth-child(odd) {
-  margin-right:20px
-  margin-left:20px; /* Seperate each item vertically */
+  margin-right:5%
+  margin-left:5%; /* Seperate each item vertically */
 }
 
 
@@ -194,8 +196,19 @@ p{
   </li>
 </ul></div>
 
-<div style="width:700px;border-radius:25px;filter:alpha(opacity=0);height:150px;margin-left:50"></div>
-     <div style="width:700px;border-radius:25px;background-color:#273037;height:610px;margin-left:10;padding-top:20px">
+<div style="
+min-width:700px;
+border-radius:25px;filter:alpha(opacity=0);height:10px;
+margin-left:10%;
+     margin-right:10%;
+     
+"></div>
+     <div style="
+     min-width:700px;
+     border-radius:25px;background-color:#273037;height:610px;
+     margin-left:10%;
+     margin-right:10%;
+     padding-top:20px">
  <div align="center">
   <div style="float:left;width:50%;"><img src="icons/me2023.png" alt="Picture of Sarah" width="200" height="200"></div>
   <div style="float:right;width:50%;"><h2>Sarah French</h2>
