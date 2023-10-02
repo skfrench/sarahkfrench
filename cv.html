@@ -15,11 +15,12 @@ body {
   .link { color: #e67300; } /* CSS link color */
 .header-cont {
     width:660px;
- float:left;
+ float:center;
  top:0px;
     background-color: #14181c;
 border-radius: 25px;
-margin-left:10px;
+margin-left:10%;
+     margin-right:10%;
 }
  .header {
    
@@ -31,7 +32,7 @@ margin-left:10px;
 li a {
   color:white;
 }
-ul {
+ul {text-align: center;
   width:100%;
   padding:0;
   margin:0;
@@ -40,13 +41,12 @@ ul {
 }
 li {
   position:relative; /*important*/
-  float:left; /*important*/
-  display:inline; /* also important here */
+  float:center; /*important*/
+  display:inline-block; /* also important here */
   list-style-type:none;
   width:100px;
   padding:0;
-  margin:0;
-  left:5%;
+  margin:auto;
   margin-bottom:0px; /* Seperate each item vertically */
 }
 li .desc {
@@ -66,12 +66,12 @@ li img {
   border:0px solid gray; /* or 0px */
 }
 li:nth-child(even) {
-  margin-left:20px;
-  margin-right:20px; /* Seperate each item vertically */
+  margin-left:5%;
+  margin-right:5%; /* Seperate each item vertically */
 }
 li:nth-child(odd) {
-  margin-right:20px
-  margin-left:20px; /* Seperate each item vertically */
+  margin-right:5%
+  margin-left:5%; /* Seperate each item vertically */
 }
 /*.midcolumn {   
   
@@ -194,8 +194,10 @@ text-align:left;
    <div class="leftcolumn">
      <br><div align="center"><div style="width:90%;"><div style="float:left;width:600px;">
  -->
-<div style="width:700px;border-radius:25px;filter:alpha(opacity=0);height:150px;margin-left:50"></div>
-     <div style="width:700px;border-radius:25px;background-color:#273037;height:1560px;margin-left:10;padding-top:20px">
+<div style="width:700px;border-radius:25px;filter:alpha(opacity=0);height:10px;margin-left:10%;
+     margin-right:10%;"></div>
+     <div style="width:700px;border-radius:25px;background-color:#273037;height:1560px;margin-left:10%;
+     margin-right:10%;padding-top:20px">
  <div align="center">
   <h2>CV</h2></div>
     <div align="left" style="padding-left:50px">
