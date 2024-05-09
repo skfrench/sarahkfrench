@@ -13,7 +13,8 @@ body {
   background: #000000;
 }
 
-
+.link { color: #e67300; } /* CSS link color */
+A {text-decoration: none;} 
 
 .header-cont {
     width:660px;
@@ -146,6 +147,68 @@ p{
 }
 
 
+.main {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+            margin-left:8.75%;
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+        }
+ 
+        .main div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+.home{
+width:700px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+/*margin-left:10%;*/
+/*     margin-right:10%;*/
+     border-radius:25px;
+     background-color:#273037;
+     height:730px;
+/*                  padding-top: 10px;*/
+     text-align:center;
+   }
+
+        .news {
+          width:350px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:center;
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:715px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 padding-top: 0px;
+   }
+
+        .blockL {
+          float:left;
+          width:300px;
+          display:inline-block;
+          text-align:center;
+          padding-top: 30px;
+          padding-left: 20px;
+   }
+
+.blockR {
+          float:right;
+          width:300px;
+          text-align:center;
+          display:inline-block;
+          padding-top: 10px;
+          padding-right: 60px;
+   }
 
 </style>
 </head>
@@ -196,26 +259,18 @@ p{
   </li>
 </ul></div>
 
-<div style="
-width:700px;
-border-radius:25px;filter:alpha(opacity=0);height:10px;
-margin-left:10%;
-     margin-right:10%;"></div>
-     <div style="
-     width:700px;
-     border-radius:25px;background-color:#273037;height:660px;
-     margin-left:10%;
-     margin-right:10%;
-     padding-top:20px">
- <div align="center">
-  <div style="float:left;width:50%;"><img src="icons/me2023.png" alt="Picture of Sarah" width="200" height="200"></div>
-  <div style="float:right;width:50%;"><h2>Sarah French</h2>
+<div class="main">
+
+<div class="home">
+  <br>
+  <div class="blockL"><img src="icons/me2023.png" alt="Picture of Sarah" width="200" height="200"></div>
+  <br><div class="blockR"><h2>Sarah French</h2>
   <h3>Research Ecologist (Ph.D.)
     <br>Postdoctoral Fellow
     <br>York University</h3></div>
 
    <br style="clear:both" />
-   <h2>My Research</h2>
+   <br><h2>My Research</h2>
 
 
     <table><tr><td>&#9678;</td></tr></table>
@@ -240,9 +295,30 @@ margin-left:10%;
 
 
 
-  <h2></h2><h3><p><br><font size=3>&#169; 2014-2024. Last updated 2024.</h3></font><br><br></div></div></div></div>
+  <h2></h2><h3><p><br><font size=3>&#169; 2014-2024. Last updated 2024.</h3></font><br><br></div>
 
   
+<div class="news">
+  <div align="left"><h2>News</h2>
+  <h3><i>May 5th, 2024</i>
+    <br>Radio-Canada interview
+    <br><a class="link" href="https://ici.radio-canada.ca/nouvelle/2069895/abeille-polinisation-ruche-sante-stress">Le déclin de la santé des abeilles décodé une fois pour toutes?</a>
+<br><br><i>April 19th, 2024</i>
+  <br>Radio-Canada Ohdio interview
+  <br><a class="link" href="https://ici.radio-canada.ca/ohdio/premiere/emissions/le-matin-du-nord/segments/entrevue/493619/abeille-pesticide-parasite-etude-scientifique">Des pertes énormes dans les ruches de certains apiculteurs de l'île Manitoulin</a>
+<br><br><i>April 17th, 2024</i>
+  <br>York University News interview
+  <br>EN <a class="link" href="https://www.yorku.ca/news/2024/04/17/honey-bees-experience-multiple-health-stressors-out-in-the-field">Honey bees experience multiple health stressors out-in-the-field</a>
+  <br>FR <a class="link" href="https://www.yorku.ca/news/2024/04/03/les-abeilles-melliferes-sont-confrontees-a-de-multiples-facteurs-de-stress-qui-affectent-leur-sante">Les abeilles mellifères sont confrontées à de multiples facteurs de stress qui affectent leur santé</a>
+  <br><br><i>April 17th, 2024</i>
+  <br>New study out in Current Biology
+  <br><a class="link" href="https://authors.elsevier.com/c/1ixih3QW8S6EBM">Honey bee stressor networks are complex and dependent on crop and region</a>
+</h3></div></div>
+
+</div>
+
+  
+
 
 
 
