@@ -16,15 +16,35 @@ body {
 .link { color: #e67300; } /* CSS link color */
 A {text-decoration: none;} 
 
+.mainU {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+            height:150px;
+            margin-left:8.75%;
+        }
+
+        .mainU div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+ 
 .header-cont {
     width:660px;
+    height:100px;
  float:center;
  top:0px;
     background-color: #14181c;
 border-radius: 25px;
-margin-left:10%;
      margin-right:10%;
-     
+     display:inline-block;
 }
  .header {
   text-align: left;
@@ -192,6 +212,24 @@ border-color:#273037;
                  padding-top: 0px;
    }
 
+   .newsU {
+          width:350px;
+/*          float:right;*/
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:left;
+/*display:inline-block;*/
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:125px;
+                 padding-left: 20px;
+                 padding-right: 0px;
+                 line-height: 65px
+   }
+
+
         .blockL {
           float:left;
           width:300px;
@@ -213,7 +251,7 @@ border-color:#273037;
 </style>
 </head>
 <body>
-
+<div class="mainU">
  <div class="header-cont" id="name">
  <ul>
   <li>
@@ -257,7 +295,12 @@ border-color:#273037;
       </div>
     </a>
   </li>
-</ul></div>
+</ul>
+
+</div>
+<div class="newsU"><h2>News</h2></div>
+</div>
+
 
 <div class="main">
 
@@ -299,8 +342,8 @@ border-color:#273037;
 
   
 <div class="news">
-  <div align="left"><h2>News</h2>
-  <h3><i>May 5th, 2024</i>
+  <div align="left">
+  <br><h3><i>May 5th, 2024</i>
     <br>Radio-Canada interview
     <br><a class="link" href="https://ici.radio-canada.ca/nouvelle/2069895/abeille-polinisation-ruche-sante-stress">Le déclin de la santé des abeilles décodé une fois pour toutes?</a>
 <br><br><i>April 19th, 2024</i>
@@ -313,6 +356,7 @@ border-color:#273037;
   <br><br><i>April 17th, 2024</i>
   <br>New study out in Current Biology
   <br><a class="link" href="https://authors.elsevier.com/c/1ixih3QW8S6EBM">Honey bee stressor networks are complex and dependent on crop and region</a>
+  <br><br>...
 </h3></div></div>
 
 </div>
