@@ -2,9 +2,10 @@
 <head>
   <title>S.K. French</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> 
+
+
 <style>
  
-A {text-decoration: none;} 
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -12,27 +13,51 @@ body {
   background: #000000;
 }
 
-  .link { color: #e67300; } /* CSS link color */
+.link { color: #e67300; } /* CSS link color */
+A {text-decoration: none;} 
+
+.mainU {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+            height:150px;
+            margin-left:8.75%;
+        }
+
+        .mainU div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+ 
 .header-cont {
     width:660px;
+    height:100px;
  float:center;
  top:0px;
     background-color: #14181c;
 border-radius: 25px;
-margin-left:10%;
      margin-right:10%;
+     display:inline-block;
 }
  .header {
-   
   text-align: left;
   height:100px;
   padding: 0px;
 }
 
+
 li a {
   color:white;
 }
-ul {text-align: center;
+ul {
+  text-align: center;
   width:100%;
   padding:0;
   margin:0;
@@ -42,11 +67,12 @@ ul {text-align: center;
 li {
   position:relative; /*important*/
   float:center; /*important*/
-  display:inline-block; /* also important here */
+  display:inline-block;  also important here 
   list-style-type:none;
   width:100px;
   padding:0;
   margin:auto;
+  
   margin-bottom:0px; /* Seperate each item vertically */
 }
 li .desc {
@@ -73,19 +99,6 @@ li:nth-child(odd) {
   margin-right:5%
   margin-left:5%; /* Seperate each item vertically */
 }
-/*.midcolumn {   
-  
-  width: 60%;
-  background-color:#273037;
-  margin-top:20px;
-  padding-left:140;
-  float:left;
-  height:550;
-
-
-  
-}*/
-
 
 
 h1 {
@@ -132,7 +145,6 @@ color: #86C5CB;
 }
 
 
-
 #name {
 text-align:left;
     padding:20px;
@@ -140,14 +152,115 @@ text-align:left;
 
 }
 
+table {
+   margin-right:5px;
+   margin-left:5px;
+/*     color: #cc6600;*/
+color: #e67300;
+}
 
+table,p
+{
+    display: inline-block;
+    vertical-align:middle;
+    }
+p{
+  
+  font-weight: bold;
+  font-size: 20px;
+  color: #D3D3D3;
+  margin:0;
+}
+
+
+.main {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+            margin-left:8.75%;
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+        }
+ 
+        .main div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+.home{
+width:700px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+/*margin-left:10%;*/
+/*     margin-right:10%;*/
+     border-radius:25px;
+     background-color:#273037;
+     height:1850px;
+/*                  padding-top: 10px;*/
+     text-align:center;
+   }
+
+        .news {
+          width:350px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:center;
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:700px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 padding-top: 0px;
+   }
+
+   .newsU {
+          width:350px;
+/*          float:right;*/
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:left;
+/*display:inline-block;*/
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:125px;
+                 padding-left: 20px;
+                 padding-right: 0px;
+                 line-height: 65px
+   }
+
+
+        .blockL {
+          float:left;
+          width:300px;
+          display:inline-block;
+          text-align:center;
+          padding-top: 30px;
+          padding-left: 20px;
+   }
+
+.blockR {
+          float:right;
+          width:300px;
+          text-align:center;
+          display:inline-block;
+          padding-top: 10px;
+          padding-right: 60px;
+   }
 
 </style>
 </head>
 <body>
-
- <div class="header-cont" id="name"">
- <ul><li>
+<div class="mainU">
+ <div class="header-cont" id="name">
+ <ul>
+  <li>
     <a href="index.html">
       <img src="icons/home.png" alt="home" width="100">
       <div  class="desc"> <!-- This extra div is required to set margin/padding for text below.-->
@@ -188,63 +301,84 @@ text-align:left;
       </div>
     </a>
   </li>
-</ul></div>
+</ul>
 
-<!-- 
-   <div class="leftcolumn">
-     <br><div align="center"><div style="width:90%;"><div style="float:left;width:600px;">
- -->
-<div style="width:700px;border-radius:25px;filter:alpha(opacity=0);height:10px;margin-left:10%;
-     margin-right:10%;"></div>
-     <div style="width:700px;border-radius:25px;background-color:#273037;height:1750px;margin-left:10%;
-     margin-right:10%;padding-top:20px">
- <div align="center">
-  <h2>CV</h2></div>
-    <div align="left" style="padding-left:50px">
+</div>
+<div class="newsU"><h2>News</h2></div>
+</div>
+
+
+<div class="main">
+
+<div class="home">
+  <br>
+  <div align="center"><h2>CV</h2></div>
+    <div align="left" style="padding-left:20px">
       <h6>Academic Positions</h6>
-     <p><h3><font color=#86C5CB>2024</font> Course Instructor - Wetland Ecosystems</h3>
+     <br><h3><font color=#86C5CB>2024</font> Course Instructor - Wetland Ecosystems</h3>
         <h4>University of Toronto Mississauga</h4>
-          <p><h3><font color=#86C5CB>2024</font> Course Instructor - Biological Laboratory and Field Methods in Environmental Science</h3>
+         <br><h3><font color=#86C5CB>2024</font> Course Instructor - Biological Laboratory and Field Methods in Environmental Science</h3>
         <h4>University of Toronto</h4>
-     <p><h3><font color=#86C5CB>2024</font> Course Instructor - Statistics for Biologists</h3>
+     <br><h3><font color=#86C5CB>2024</font> Course Instructor - Statistics for Biologists</h3>
         <h4>York University</h4>
-     <p><h3><font color=#86C5CB>2021-2024</font> Postdoctoral Fellow</h3>
+     <br><h3><font color=#86C5CB>2021-2024</font> Postdoctoral Fellow</h3>
         <h4>York University with <a class="link" href="http://zayedlab.apps01.yorku.ca/wordpress/">Dr. Amro Zayed</a> and <a class="link" href="https://beecsi.ca/">BeeCSI</a>
-          <p><h3><font color=#86C5CB>2019-2021</font> Postdoctoral Fellow</h3>
+      <br><br><h3><font color=#86C5CB>2019-2021</font> Postdoctoral Fellow</h3>
         <h4>University of Waterloo with <a class="link" href="https://uwaterloo.ca/rooney-lab/">Dr. Rebecca Rooney</a> and <a class="link" href="https://www.ducks.ca/">Ducks Unlimited Canada</a>
     <br><br><br><h6>Education</h6>
-<p><h3><font color=#86C5CB>2018</font> Ph.D. in Aquatic Ecology</h3>
+<br><h3><font color=#86C5CB>2018</font> Ph.D. in Aquatic Ecology</h3>
   <h4>University of Toronto Mississauga with <a class="link" href="http://www.shannonjmccauley.com/">Dr. Shannon McCauley</h4></a>
-  <p><h3><font color=#86C5CB>2013</font> M.Sc. in Aquatic Ecology</h3>
+  <br><h3><font color=#86C5CB>2013</font> M.Sc. in Aquatic Ecology</h3>
   <h4>University of Guelph with <a class="link" href="http://www.uoguelph.ca/~ackerman/">Dr. Josef Ackerman</h4></a>
-  <p><h3><font color=#86C5CB>2010</font> B.Sc.(Env.) in Natural Resources Management</h3>
+  <br><h3><font color=#86C5CB>2010</font> B.Sc.(Env.) in Natural Resources Management</h3>
 <h4>University of Guelph
 </h4>
 <br><br><h6>Competitive Awards and Research Grants (in CAD)</h6>
-  <p><h3><font color=#86C5CB>2019-2021</font> Mitacs Elevate Postdoctoral Fellowship ($120,000)</h3>
-	<p><h3><font color=#86C5CB>2018</font> Harold H. Harvey Prize for Academic Leadership ($500)</h3><h4>University of Toronto</h4>
-<p><h3><font color=#86C5CB>2015-2018</font> NSERC Doctoral Postgraduate Scholarship ($42,000)</h3>
-<p><h3><font color=#86C5CB>2017</font> Sir Joseph Flavelle Fellowship ($2,500)</h3><h4>University of Toronto</h4>
-<p><h3><font color=#86C5CB>2015</font> Norman Stuart Robertson Fellowship ($3,000)</h3><h4>University of Toronto</h4>
-<p><h3><font color=#86C5CB>2015</font> Theodore Roosevelt Memorial Grant ($1,099 USD)</h3><h4>American Museum of Natural History</h4>
-<p><h3><font color=#86C5CB>2014</font> Queen Elizabeth II/Pfizer Graduate Scholarship in Science and Technology ($15,000)</h3><h4>University of Toronto</h4>
-<p><h3><font color=#86C5CB>2014</font> Eleanor Cate Allen Fellowship ($2,400)</h3><h4>University of Toronto</h4>
-<p><h3><font color=#86C5CB>2012</font> Arthur Richmond Memorial Scholarship ($3,500)</h3><h4>University of Guelph</h4>
-<p><h3><font color=#86C5CB>2011</font> Norman James Aquatic Animal Ecology Scholarship ($4,000)</h3><h4>University of Guelph</h4>
-<p><h3><font color=#86C5CB>2009</font> S.C. Johnson Environmental Scholarship ($1,500)</h3><h4>Grand River Conservation Authority</h4>
-<p><h3><font color=#86C5CB>2009</font> D & G Hart Travel Grant ($1,000)</h3><h4>University of Guelph</h4>
-<p><h3><font color=#86C5CB>2009</font> Millennium Grant ($2,500)</h3><h4>Canada Millennium Scholarship Foundation</h4>
-<p><h3><font color=#86C5CB>2008</font> Arthur D. Latornell Travel Grant ($600)</h3><h4>University of Guelph</h4>
-<p><h3><font color=#86C5CB>2007-2008</font> Millennium Excellence Award ($10,000)</h3><h4>Canada Millennium Scholarship Foundation</h4>
-<p><h3><font color=#86C5CB>2005</font> Entrance Scholarship ($2,000)</h3><h4>University of Guelph</h4><br><br>
-</div></div></div></div>
+  <br><h3><font color=#86C5CB>2019-2021</font> Mitacs Elevate Postdoctoral Fellowship ($120,000)</h3>
+  <br><h3><font color=#86C5CB>2018</font> Harold H. Harvey Prize for Academic Leadership ($500)</h3><h4>University of Toronto</h4>
+<br><h3><font color=#86C5CB>2015-2018</font> NSERC Doctoral Postgraduate Scholarship ($42,000)</h3>
+<br><h3><font color=#86C5CB>2017</font> Sir Joseph Flavelle Fellowship ($2,500)</h3><h4>University of Toronto</h4>
+<br><h3><font color=#86C5CB>2015</font> Norman Stuart Robertson Fellowship ($3,000)</h3><h4>University of Toronto</h4>
+<br><h3><font color=#86C5CB>2015</font> Theodore Roosevelt Memorial Grant ($1,099 USD)</h3><h4>American Museum of Natural History</h4>
+<br><h3><font color=#86C5CB>2014</font> Queen Elizabeth II/Pfizer Graduate Scholarship in Science and Technology ($15,000)</h3><h4>University of Toronto</h4>
+<br><h3><font color=#86C5CB>2014</font> Eleanor Cate Allen Fellowship ($2,400)</h3><h4>University of Toronto</h4>
+<br><h3><font color=#86C5CB>2012</font> Arthur Richmond Memorial Scholarship ($3,500)</h3><h4>University of Guelph</h4>
+<br><h3><font color=#86C5CB>2011</font> Norman James Aquatic Animal Ecology Scholarship ($4,000)</h3><h4>University of Guelph</h4>
+<br><h3><font color=#86C5CB>2009</font> S.C. Johnson Environmental Scholarship ($1,500)</h3><h4>Grand River Conservation Authority</h4>
+<br><h3><font color=#86C5CB>2009</font> D & G Hart Travel Grant ($1,000)</h3><h4>University of Guelph</h4>
+<br><h3><font color=#86C5CB>2009</font> Millennium Grant ($2,500)</h3><h4>Canada Millennium Scholarship Foundation</h4>
+<br><h3><font color=#86C5CB>2008</font> Arthur D. Latornell Travel Grant ($600)</h3><h4>University of Guelph</h4>
+<br><h3><font color=#86C5CB>2007-2008</font> Millennium Excellence Award ($10,000)</h3><h4>Canada Millennium Scholarship Foundation</h4>
+<br><h3><font color=#86C5CB>2005</font> Entrance Scholarship ($2,000)</h3><h4>University of Guelph</h4><br><br>
+</div></div>
 
 
+  
+<div class="news">
+  <div align="left">
+  <br><h3><i><u>2024</u></i>
+    <br><br><i>May 5th</i>
+    <br>Radio-Canada interview
+    <br><a class="link" href="https://ici.radio-canada.ca/nouvelle/2069895/abeille-polinisation-ruche-sante-stress">Le déclin de la santé des abeilles décodé une fois pour toutes?</a>
+<br><br><i>April 19th</i>
+  <br>Radio-Canada Ohdio interview
+  <br><a class="link" href="https://ici.radio-canada.ca/ohdio/premiere/emissions/le-matin-du-nord/segments/entrevue/493619/abeille-pesticide-parasite-etude-scientifique">Des pertes énormes dans les ruches de certains apiculteurs de l'île Manitoulin</a>
+<br><br><i>April 17th</i>
+  <br>York University News interview
+  <br>EN <a class="link" href="https://www.yorku.ca/news/2024/04/17/honey-bees-experience-multiple-health-stressors-out-in-the-field">Honey bees experience multiple health stressors out-in-the-field</a>
+  <br>FR <a class="link" href="https://www.yorku.ca/news/2024/04/03/les-abeilles-melliferes-sont-confrontees-a-de-multiples-facteurs-de-stress-qui-affectent-leur-sante">Les abeilles mellifères sont confrontées à de multiples facteurs de stress qui affectent leur santé</a>
+  <br><br><i>April 17th</i>
+  <br>New study out in Current Biology
+  <br><a class="link" href="https://authors.elsevier.com/c/1ixih3QW8S6EBM">Honey bee stressor networks are complex and dependent on crop and region</a>
+</h3></div></div>
+
+
+</div>
+  
 
 
 
 
 </body>
 </html>
-
 
