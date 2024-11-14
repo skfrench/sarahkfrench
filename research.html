@@ -1,11 +1,11 @@
 <html>
 <head>
-	<title>S.K. French</title>
-
+  <title>S.K. French</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> 
+
+
 <style>
  
-A {text-decoration: none;} 
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -13,27 +13,51 @@ body {
   background: #000000;
 }
 
-  .link { color: #e67300; } /* CSS link color */
+.link { color: #e67300; } /* CSS link color */
+A {text-decoration: none;} 
+
+.mainU {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+            height:150px;
+            margin-left:8.75%;
+        }
+
+        .mainU div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+ 
 .header-cont {
     width:660px;
+    height:100px;
  float:center;
  top:0px;
     background-color: #14181c;
 border-radius: 25px;
-margin-left:10%;
      margin-right:10%;
+     display:inline-block;
 }
  .header {
-   
   text-align: left;
   height:100px;
   padding: 0px;
 }
 
+
 li a {
   color:white;
 }
-ul {text-align: center;
+ul {
+  text-align: center;
   width:100%;
   padding:0;
   margin:0;
@@ -43,11 +67,12 @@ ul {text-align: center;
 li {
   position:relative; /*important*/
   float:center; /*important*/
-  display:inline-block; /* also important here */
+  display:inline-block;  also important here 
   list-style-type:none;
   width:100px;
   padding:0;
   margin:auto;
+  
   margin-bottom:0px; /* Seperate each item vertically */
 }
 li .desc {
@@ -75,18 +100,6 @@ li:nth-child(odd) {
   margin-left:5%; /* Seperate each item vertically */
 }
 
-/*.midcolumn {   
-  
-  width: 60%;
-  background-color:#273037;
-  margin-top:20px;
-  padding-left:140;
-  float:left;
-  height:550;
-
-
-  
-}*/
 
 
 
@@ -132,7 +145,6 @@ h6 {
 }
 
 
-
 #name {
 text-align:left;
     padding:20px;
@@ -140,14 +152,115 @@ text-align:left;
 
 }
 
+table {
+   margin-right:5px;
+   margin-left:5px;
+/*     color: #cc6600;*/
+color: #e67300;
+}
 
+table,p
+{
+    display: inline-block;
+    vertical-align:middle;
+    }
+p{
+  
+  font-weight: bold;
+  font-size: 20px;
+  color: #D3D3D3;
+  margin:0;
+}
+
+
+.main {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+            margin-left:8.75%;
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+        }
+ 
+        .main div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+.home{
+width:700px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+/*margin-left:10%;*/
+/*     margin-right:10%;*/
+     border-radius:25px;
+     background-color:#273037;
+     height:3200px;
+/*                  padding-top: 10px;*/
+     text-align:center;
+   }
+
+        .news {
+          width:350px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:center;
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:700px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 padding-top: 0px;
+   }
+
+   .newsU {
+          width:350px;
+/*          float:right;*/
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:left;
+/*display:inline-block;*/
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:125px;
+                 padding-left: 20px;
+                 padding-right: 0px;
+                 line-height: 65px
+   }
+
+
+        .blockL {
+          float:left;
+          width:300px;
+          display:inline-block;
+          text-align:center;
+          padding-top: 30px;
+          padding-left: 20px;
+   }
+
+.blockR {
+          float:right;
+          width:300px;
+          text-align:center;
+          display:inline-block;
+          padding-top: 10px;
+          padding-right: 60px;
+   }
 
 </style>
 </head>
 <body>
-
- <div class="header-cont" id="name"">
- <ul><li>
+<div class="mainU">
+ <div class="header-cont" id="name">
+ <ul>
+  <li>
     <a href="index.html">
       <img src="icons/home.png" alt="home" width="100">
       <div  class="desc"> <!-- This extra div is required to set margin/padding for text below.-->
@@ -188,56 +301,84 @@ text-align:left;
       </div>
     </a>
   </li>
-</ul></div>
+</ul>
+
+</div>
+<div class="newsU"><h2>News</h2></div>
+</div>
 
 
-   <div style="width:700px;border-radius:25px;filter:alpha(opacity=0);height:10px;margin-left:10%;
-     margin-right:10%;"></div>
-     <div style="width:700px;border-radius:25px;background-color:#273037;height:3300px;margin-left:10%;
-     margin-right:10%;padding-top:20px">
+<div class="main">
+
+<div class="home">
+
  <div align="center"><h2>Research</h2>
-   	<h6>| <a class="link" href="#HabitatSelection">Habitat Selection</a> | <a class="link" href="#MovementBehaviour">Movement Behaviour</a> |<br>| <a class="link" href="#Populations">Populations</a> | <br>| <a class="link" href="#Communities">Communities</a> |</a></p></font></h6>
+    <h6>| <a class="link" href="#HabitatSelection">Habitat Selection</a> | <a class="link" href="#MovementBehaviour">Movement Behaviour</a> |<br>| <a class="link" href="#Populations">Populations</a> | <br>| <a class="link" href="#Communities">Communities</a> |</a></p></font></h6>
 
 </div>
  <!-- <div align="left" style="padding-left:50px"> -->
-   	
-
-    <div align= "center" id="HabitatSelection"><br><h6>Habitat Selection</h6></div><p><h3>
+  <br>
+  <div align= "center" id="HabitatSelection"><br><h6>Habitat Selection</h6></div><p><h3>
       
 
-      <div align="left" style="padding-left:50px;padding-right:50px"><p>Canopy cover over aquatic mesocosms limited the arrival of adult dragonflies but did not affect larval survival (<a class="link" href="http://rdcu.be/KliM">French and McCauley 2018</a>). This limited attraction during reproductive habitat selection likely causes low larval dragonfly diversity in closed habitats (<a class="link" href="https://link.springer.com/article/10.1007/s00442-008-1141-8">McCauley et al. 2008</a>).</h3>
-<p><div align="center"><img src=2013setup.png width="500" alt="Set-up of artificial shading over aquatic mesocosms"></div>
+      <div align="left" style="padding-left:20px;padding-right:15px">
+        <br>Canopy cover over aquatic mesocosms limited the arrival of adult dragonflies but did not affect larval survival (<a class="link" href="http://rdcu.be/KliM">French and McCauley 2018</a>). This limited attraction during reproductive habitat selection likely causes low larval dragonfly diversity in closed habitats (<a class="link" href="https://link.springer.com/article/10.1007/s00442-008-1141-8">McCauley et al. 2008</a>).</h3>
+<br><div align="center"><img src=2013setup.png width="500" alt="Set-up of artificial shading over aquatic mesocosms"></div>
 <div align="left" style="padding-left:100px;padding-right:100px"><h4>Aquatic mesocosms under artificial shading ("open" and "closed") at <a class="link" href="http://ksr.utoronto.ca/">Koffler Scientific Reserve (KSR)</a>. The white netting was removed before experiments. &#169; S. French (2013).</h4></div>
 
 
-  <div align="left" style="padding-left:50px;padding-right:50px"><p><h3>The proximity of forest edges around a pond, as potential roosting habitat, did not affect adult dragonfly arrival in relatively open landscapes <a class="link" href="https://files.wachholtz-verlag.de/openaccess/ijo/24/leite/10-23797-2159-6719_24_2.pdf">(Leite et al. 2021)</a>.</h3></div>
-  <p><div align="center"><img src=Leite2021.png width="400" alt="Diagram of forest edge proximity at 360 degrees around a pond"></div>
+  <div align="left" style="padding-left:20px;padding-right:15px"><br><h3>The proximity of forest edges around a pond, as potential roosting habitat, did not affect adult dragonfly arrival in relatively open landscapes <a class="link" href="https://files.wachholtz-verlag.de/openaccess/ijo/24/leite/10-23797-2159-6719_24_2.pdf">(Leite et al. 2021)</a>.</h3></div>
+  <br><div align="center"><img src=Leite2021.png width="400" alt="Diagram of forest edge proximity at 360 degrees around a pond"></div>
 <div align="left" style="padding-left:150px;padding-right:150px"><h4>Proximity of forest edges at 360° around a central pond at <a class="link" href="http://ksr.utoronto.ca/">KSR</a>. &#169; S. French (2021).</h4></div>
 
 <div align="center" id="MovementBehaviour"><br><br><h6>Movement Behaviour</h6></div>
 
-<div align="left" style="padding-left:50px;padding-right:50px"><p><h3>When released at forest edges, more dragonflies flew towards fields than forests, suggesting forests impede dragonfly movement at small scales. Responses were species-specific. Open environments such as fields likely facilitate the movement of dragonflies at small and large scales (<a class="link" href="https://rdcu.be/bFck5">French and McCauley 2019</a>).</h3></div>
-<p><div align="center"><img src=GraphicalAbstract2019.png width="400" alt="Graphical abstract of research: at forest edges dragonflies fly towards fields rather than forests and one species takes flight more than another"></div>
+<div align="left" style="padding-left:20px;padding-right:15px"><br><h3>When released at forest edges, more dragonflies flew towards fields than forests, suggesting forests impede dragonfly movement at small scales. Responses were species-specific. Open environments such as fields likely facilitate the movement of dragonflies at small and large scales (<a class="link" href="https://rdcu.be/bFck5">French and McCauley 2019</a>).</h3></div>
+<br><div align="center"><img src=GraphicalAbstract2019.png width="400" alt="Graphical abstract of research: at forest edges dragonflies fly towards fields rather than forests and one species takes flight more than another"></div>
 <div align="left" style="padding-left:150px;padding-right:150px"><h4>Dragonflies flew more towards fields than forests when released at a forest edge at <a class="link" href="http://ksr.utoronto.ca/">KSR</a>. At the forest edge, <i>Leucorrhinia intacta</i> (in black) took flight less than <i>Sympetrum</i> (in red). &#169; S. French (2019) and John Wiley and Sons.</h4></div>
 
 <div align="center" id="Populations"><br><br><h6>Populations</h6></div>
-<div align="left" style="padding-left:50px;padding-right:50px"><p><h3>Honey bee colonies are exposed to multiple stressors all at once. Exposure to crops during pollination increases the complexity of stressor networks, which vary among crops and regions (<a class="link" href="manuscripts/French_etal_2024.pdf">French et al. 2024</a>). In collaboration with researchers from <a class="link" href="https://beecsi.ca/">BeeCSI</a>.</h3></div>
-<p><div align="center"><img src=French_etal_2024_Abstract.png width="400" alt="Graphical abstract of research: honey bees are exposed to multiple stressors across the pollination season, crops, and regions"></div>
+<div align="left" style="padding-left:20px;padding-right:15px"><br><h3>Honey bee colonies are exposed to multiple stressors all at once. Exposure to crops during pollination increases the complexity of stressor networks, which vary among crops and regions (<a class="link" href="manuscripts/French_etal_2024.pdf">French et al. 2024</a>). In collaboration with researchers from <a class="link" href="https://beecsi.ca/">BeeCSI</a>.</h3></div>
+<br><div align="center"><img src=French_etal_2024_Abstract.png width="400" alt="Graphical abstract of research: honey bees are exposed to multiple stressors across the pollination season, crops, and regions"></div>
 <div align="left" style="padding-left:150px;padding-right:150px"><h4>Stressor networks differ across time, crops, and regions. &#169; S. French (2024) and Cell Press.</h4></div>
-<div align="left" style="padding-left:50px"><p><h3>Determining how hive-level and landscape-level stressors including pests, pathogens, and pesticides, interact to influence honey bee health in Canadian agricultural regions. 
+<div align="left" style="padding-left:20px;padding-right:15px"><br><h3>Determining how hive-level and landscape-level stressors including pests, pathogens, and pesticides, interact to influence honey bee health in Canadian agricultural regions. 
 </h3></div>
 
 <div align= "center" id="Communities"><br><h6>Communities</h6></div>
-<div align="left" style="padding-left:50px"><p><h3>The influence of modern local conditions versus historical and modern landscape conditions on modern larval dragonfly communities (<a class="link" href="">French et al. In Preparation</a>). In collaboration with researchers through the <a class="link" href="http://sites.lsa.umich.edu/esgr/">Edwin S. George Reserve (ESGR)</a>.
+<div align="left" style="padding-left:20px;padding-right:15px"><br><h3>The influence of modern local conditions versus historical and modern landscape conditions on modern larval dragonfly communities (<a class="link" href="">French et al. In Preparation</a>). In collaboration with researchers through the <a class="link" href="http://sites.lsa.umich.edu/esgr/">Edwin S. George Reserve (ESGR)</a>.
 </h3>
-<p><h3>The recovery of larval dragonfly communities following a drought in response to local versus landscape conditions (<a class="link" href="">French et al. In Preparation</a>). In collaboration with researchers through the <a class="link" href="http://sites.lsa.umich.edu/esgr/">ESGR</a>.
+<br><h3>The recovery of larval dragonfly communities following a drought in response to local versus landscape conditions (<a class="link" href="">French et al. In Preparation</a>). In collaboration with researchers through the <a class="link" href="http://sites.lsa.umich.edu/esgr/">ESGR</a>.
 </h3>
-<p><h3>The effects of local and landscape conditions on aquatic communities and the health of restored agricultural wetlands (<a class="link" href="">French et al. In Preparation</a>). In collaboration with researchers at <a class="link" href="https://www.ducks.ca">Ducks Unlimited Canada</a>.
-</h3></div>
-<br><br>
-</div></div></div></div>
+<br><h3>The effects of local and landscape conditions on aquatic communities and the health of restored agricultural wetlands (<a class="link" href="">French et al. In Preparation</a>). In collaboration with researchers at <a class="link" href="https://www.ducks.ca">Ducks Unlimited Canada</a>.
+</h3></div></div>
+
+
+  
+<div class="news">
+  <div align="left">
+  <br><h3><i><u>2024</u></i>
+    <br><br><i>May 5th</i>
+    <br>Radio-Canada interview
+    <br><a class="link" href="https://ici.radio-canada.ca/nouvelle/2069895/abeille-polinisation-ruche-sante-stress">Le déclin de la santé des abeilles décodé une fois pour toutes?</a>
+<br><br><i>April 19th</i>
+  <br>Radio-Canada Ohdio interview
+  <br><a class="link" href="https://ici.radio-canada.ca/ohdio/premiere/emissions/le-matin-du-nord/segments/entrevue/493619/abeille-pesticide-parasite-etude-scientifique">Des pertes énormes dans les ruches de certains apiculteurs de l'île Manitoulin</a>
+<br><br><i>April 17th</i>
+  <br>York University News interview
+  <br>EN <a class="link" href="https://www.yorku.ca/news/2024/04/17/honey-bees-experience-multiple-health-stressors-out-in-the-field">Honey bees experience multiple health stressors out-in-the-field</a>
+  <br>FR <a class="link" href="https://www.yorku.ca/news/2024/04/03/les-abeilles-melliferes-sont-confrontees-a-de-multiples-facteurs-de-stress-qui-affectent-leur-sante">Les abeilles mellifères sont confrontées à de multiples facteurs de stress qui affectent leur santé</a>
+  <br><br><i>April 17th</i>
+  <br>New study out in Current Biology
+  <br><a class="link" href="https://authors.elsevier.com/c/1ixih3QW8S6EBM">Honey bee stressor networks are complex and dependent on crop and region</a>
+</h3></div></div>
+
+</div>
+
+  
+
+
+
 
 </body>
 </html>
-
 
