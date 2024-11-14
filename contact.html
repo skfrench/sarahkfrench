@@ -1,44 +1,63 @@
 <html>
 <head>
-
   <title>S.K. French</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> 
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-<style>
-   .link { color: #e67300; } /* CSS link color */
 
-A {text-decoration: none;} 
+
+<style>
+ 
+
 body {
   font-family: 'Raleway', sans-serif;
   padding: 0px;
   background: #000000;
 }
 
+.link { color: #e67300; } /* CSS link color */
+A {text-decoration: none;} 
 
+.mainU {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+            height:150px;
+            margin-left:8.75%;
+        }
 
+        .mainU div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+ 
 .header-cont {
     width:660px;
+    height:100px;
  float:center;
  top:0px;
     background-color: #14181c;
 border-radius: 25px;
-margin-left:10%;
      margin-right:10%;
+     display:inline-block;
 }
  .header {
-   
   text-align: left;
   height:100px;
   padding: 0px;
 }
 
+
 li a {
   color:white;
 }
-ul {text-align: center;
+ul {
+  text-align: center;
   width:100%;
   padding:0;
   margin:0;
@@ -48,11 +67,12 @@ ul {text-align: center;
 li {
   position:relative; /*important*/
   float:center; /*important*/
-  display:inline-block; /* also important here */
+  display:inline-block;  also important here 
   list-style-type:none;
   width:100px;
   padding:0;
   margin:auto;
+  
   margin-bottom:0px; /* Seperate each item vertically */
 }
 li .desc {
@@ -79,19 +99,6 @@ li:nth-child(odd) {
   margin-right:5%
   margin-left:5%; /* Seperate each item vertically */
 }
-
-/*.midcolumn {   
-  
-  width: 60%;
-  background-color:#273037;
-  margin-top:20px;
-  padding-left:140;
-  float:left;
-  height:550;
-
-
-  
-}*/
 
 
 
@@ -133,7 +140,6 @@ h5 {
 }
 
 
-
 #name {
 text-align:left;
     padding:20px;
@@ -141,15 +147,115 @@ text-align:left;
 
 }
 
+table {
+   margin-right:5px;
+   margin-left:5px;
+/*     color: #cc6600;*/
+color: #e67300;
+}
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+table,p
+{
+    display: inline-block;
+    vertical-align:middle;
+    }
+p{
+  
+  font-weight: bold;
+  font-size: 20px;
+  color: #D3D3D3;
+  margin:0;
+}
+
+
+.main {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+            margin-left:8.75%;
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+        }
+ 
+        .main div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+.home{
+width:700px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+/*margin-left:10%;*/
+/*     margin-right:10%;*/
+     border-radius:25px;
+     background-color:#273037;
+     height:1850px;
+/*                  padding-top: 10px;*/
+     text-align:center;
+   }
+
+        .news {
+          width:350px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:center;
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:700px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 padding-top: 0px;
+   }
+
+   .newsU {
+          width:350px;
+/*          float:right;*/
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:left;
+/*display:inline-block;*/
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:125px;
+                 padding-left: 20px;
+                 padding-right: 0px;
+                 line-height: 65px
+   }
+
+
+        .blockL {
+          float:left;
+          width:300px;
+          display:inline-block;
+          text-align:center;
+          padding-top: 30px;
+          padding-left: 20px;
+   }
+
+.blockR {
+          float:right;
+          width:300px;
+          text-align:center;
+          display:inline-block;
+          padding-top: 10px;
+          padding-right: 60px;
+   }
 
 </style>
 </head>
 <body>
-
- <div class="header-cont" id="name"">
- <ul><li>
+<div class="mainU">
+ <div class="header-cont" id="name">
+ <ul>
+  <li>
     <a href="index.html">
       <img src="icons/home.png" alt="home" width="100">
       <div  class="desc"> <!-- This extra div is required to set margin/padding for text below.-->
@@ -190,37 +296,62 @@ text-align:left;
       </div>
     </a>
   </li>
-</ul></div>
+</ul>
+
+</div>
+<div class="newsU"><h2>News</h2></div>
+</div>
 
 
-   <!-- <div class="leftcolumn">
-     <br><div align="center"><div style="width:90%;"><div style="float:left;width:600px;"> -->
+<div class="main">
 
-      <div style="width:700px;border-radius:25px;filter:alpha(opacity=0);height:10px;margin-left:10%;
-     margin-right:10%;"></div>
-     <div style="width:700px;border-radius:25px;background-color:#273037;height:610px;margin-left:10%;
-     margin-right:10%;padding-top:20px">
- <div align="center">
+<div class="home">
+  <br>
+  <div align="center">
   <h2>Contact</h2></div>
 <div align="left" style="padding-left:50px">
 <h3><i class="material-icons" style="font-size:48px;color:#D3D3D3">email</i>&nbsp E-mail: sarahkathrynfrench [at] gmail.com
-
-<p><a class="link" href="https://twitter.com/SK_French"><i class='fab fa-twitter' style='font-size:48px;color:#cc6600'></i> &nbspTwitter: SK_French</a>
-	<p><a class="link" href="https://scholar.google.ca/citations?user=JvP1iwcAAAAJ&hl=en"><i class="ai ai-google-scholar ai-3x"></i>
-		 Google Scholar</a>
-	<p><a class="link" href="https://www.researchgate.net/profile/Sarah_French10"><i class="ai ai-researchgate ai-3x"></i>
-		 ResearchGate</a>
-		 <p><a class="link" href="https://orcid.org/0000-0002-4286-5382"><i class="ai ai-orcid ai-3x"></i>
-		 ORCiD</a>
-		 
-	
+  <br><a class="link" href="https://scholar.google.ca/citations?user=JvP1iwcAAAAJ&hl=en"><i class="ai ai-google-scholar ai-3x"></i>Google Scholar</a>
+  <br><a class="link" href="https://www.researchgate.net/profile/Sarah_French10"><i class="ai ai-researchgate ai-3x"></i>ResearchGate</a>
+     <br><a class="link" href="https://orcid.org/0000-0002-4286-5382"><i class="ai ai-orcid ai-3x"></i>ORCiD</a>
+     <br><a class="link" href="https://twitter.com/SK_French"><i style='font-size:48px;color:#cc6600'></i> &nbspBluesky: @skfrench.bsky.social</a>
+     <br><a class="link" href="https://bsky.app/profile/skfrench.bsky.social"><i class='fab fa-twitter' style='font-size:48px;color:#cc6600'></i> &nbspTwitter: SK_French</a>
+     
+  
 </h3>
 
 
 
 
+</div></div>
+
+
+  
+<div class="news">
+  <div align="left">
+  <br><h3><i><u>2024</u></i>
+    <br><br><i>May 5th</i>
+    <br>Radio-Canada interview
+    <br><a class="link" href="https://ici.radio-canada.ca/nouvelle/2069895/abeille-polinisation-ruche-sante-stress">Le déclin de la santé des abeilles décodé une fois pour toutes?</a>
+<br><br><i>April 19th</i>
+  <br>Radio-Canada Ohdio interview
+  <br><a class="link" href="https://ici.radio-canada.ca/ohdio/premiere/emissions/le-matin-du-nord/segments/entrevue/493619/abeille-pesticide-parasite-etude-scientifique">Des pertes énormes dans les ruches de certains apiculteurs de l'île Manitoulin</a>
+<br><br><i>April 17th</i>
+  <br>York University News interview
+  <br>EN <a class="link" href="https://www.yorku.ca/news/2024/04/17/honey-bees-experience-multiple-health-stressors-out-in-the-field">Honey bees experience multiple health stressors out-in-the-field</a>
+  <br>FR <a class="link" href="https://www.yorku.ca/news/2024/04/03/les-abeilles-melliferes-sont-confrontees-a-de-multiples-facteurs-de-stress-qui-affectent-leur-sante">Les abeilles mellifères sont confrontées à de multiples facteurs de stress qui affectent leur santé</a>
+  <br><br><i>April 17th</i>
+  <br>New study out in Current Biology
+  <br><a class="link" href="https://authors.elsevier.com/c/1ixih3QW8S6EBM">Honey bee stressor networks are complex and dependent on crop and region</a>
+</h3></div></div>
+
+
 </div>
-</div></div></div>
+  
+
+
+
+
 </body>
 </html>
 
