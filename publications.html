@@ -2,9 +2,15 @@
 <head>
   <title>S.K. French</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> 
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+   -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous"/>
+
 <style>
  
-A {text-decoration: none;} 
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -12,27 +18,51 @@ body {
   background: #000000;
 }
 
-  .link { color: #e67300; } /* CSS link color */
+.link { color: #e67300; } /* CSS link color */
+A {text-decoration: none;} 
+
+.mainU {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+            height:150px;
+            margin-left:8.75%;
+        }
+
+        .mainU div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+ 
 .header-cont {
     width:660px;
+    height:100px;
  float:center;
  top:0px;
     background-color: #14181c;
 border-radius: 25px;
-margin-left:10%;
      margin-right:10%;
+     display:inline-block;
 }
  .header {
-   
   text-align: left;
   height:100px;
   padding: 0px;
 }
 
+
 li a {
   color:white;
 }
-ul {text-align: center;
+ul {
+  text-align: center;
   width:100%;
   padding:0;
   margin:0;
@@ -42,11 +72,12 @@ ul {text-align: center;
 li {
   position:relative; /*important*/
   float:center; /*important*/
-  display:inline-block; /* also important here */
+  display:inline-block;  also important here 
   list-style-type:none;
   width:100px;
   padding:0;
   margin:auto;
+  
   margin-bottom:0px; /* Seperate each item vertically */
 }
 li .desc {
@@ -73,20 +104,7 @@ li:nth-child(odd) {
   margin-right:5%
   margin-left:5%; /* Seperate each item vertically */
 }
-/*
-.midcolumn {   
-  
-  width: 60%;
-  background-color:#273037;
-  margin-top:20px;
-  padding-left:140;
-  float:left;
-  height:550;
 
-
-  
-}
-*/
 
 
 h1 {
@@ -98,24 +116,25 @@ h1 {
 
 h2 {
   font-size: 35px;
-  color: #86C5CB;
+/*  color: #95B8BB;*/
+color: #86C5CB;
   
 }
 
 h3 {
   font-size: 20px;
   color: #D3D3D3;
-  text-align:left;
+/*  text-align:left;*/
   margin:0px;
-  padding:0px;
+/*  padding:0px;*/
 }
 
 h4 {
   font-size: 17px;
   color: #949595;
-  text-align: left;
+/*  text-align: left;*/
   margin:0px;
-  padding:0px;
+/*  padding:0px;*/
 }
 
 h5 {
@@ -126,7 +145,6 @@ h5 {
 }
 
 
-
 #name {
 text-align:left;
     padding:20px;
@@ -134,14 +152,115 @@ text-align:left;
 
 }
 
+table {
+   margin-right:5px;
+   margin-left:5px;
+/*     color: #cc6600;*/
+color: #e67300;
+}
 
+table,p
+{
+    display: inline-block;
+    vertical-align:middle;
+    }
+p{
+  
+  font-weight: bold;
+  font-size: 20px;
+  color: #D3D3D3;
+  margin:0;
+}
+
+
+.main {
+            display: flex;
+            flex-direction: row;
+/*            font-size: 30px;*/
+/*            color: green;*/
+            margin-left:8.75%;
+/*            margin-right:10%;*/
+/*            border: 4px dashed green;*/
+/*            padding: 5px;*/
+            padding-top:10px;
+            width: 1200px;
+        }
+ 
+        .main div {
+/*            border: 2px solid red;*/
+            margin: 0px 0px;
+            margin-left:1.25%;
+        }
+.home{
+width:700px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+/*margin-left:10%;*/
+/*     margin-right:10%;*/
+     border-radius:25px;
+     background-color:#273037;
+     height:1400px;
+/*                  padding-top: 10px;*/
+     text-align:center;
+   }
+
+        .news {
+          width:350px;
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:center;
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:700px;
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 padding-top: 0px;
+   }
+
+   .newsU {
+          width:350px;
+/*          float:right;*/
+/*border-radius:25px;filter:alpha(opacity=0);height:10px;*/
+text-align:left;
+/*display:inline-block;*/
+border: 8px;
+border-style:solid;
+border-color:#273037;
+/*     margin-right:10%;*/
+     border-radius:25px;
+     height:125px;
+                 padding-left: 20px;
+                 padding-right: 0px;
+                 line-height: 65px
+   }
+
+
+        .blockL {
+          float:left;
+          width:300px;
+          display:inline-block;
+          text-align:center;
+          padding-top: 30px;
+          padding-left: 20px;
+   }
+
+.blockR {
+          float:right;
+          width:300px;
+          text-align:center;
+          display:inline-block;
+          padding-top: 10px;
+          padding-right: 60px;
+   }
 
 </style>
 </head>
 <body>
-
- <div class="header-cont" id="name"">
- <ul><li>
+<div class="mainU">
+ <div class="header-cont" id="name">
+ <ul>
+  <li>
     <a href="index.html">
       <img src="icons/home.png" alt="home" width="100">
       <div  class="desc"> <!-- This extra div is required to set margin/padding for text below.-->
@@ -182,16 +301,19 @@ text-align:left;
       </div>
     </a>
   </li>
-</ul></div>
+</ul>
+
+</div>
+<div class="newsU"><h2>News</h2></div>
+</div>
 
 
-   
-      <div style="width:700px;border-radius:25px;filter:alpha(opacity=0);height:10px;margin-left:10%;
-     margin-right:10%;"></div>
-     <div style="width:700px;border-radius:25px;background-color:#273037;height:1400px;margin-left:10%;
-     margin-right:10%;padding-top:20px">
+<div class="main">
+
+<div class="home">
+  <br>
  <div align="center"><h2>Publications</h2></div>
-<div align="left" style="padding-left:50px">
+<div align="left" style="padding-left:20px">
 <h2></h2><h3><font color=#86C5CB>10.</font> <font size=3>McAfee A, Alavi-Shoushtari N, Labuschagne R, Tran L, Tsvetkov N, Common J, Higo H, Pernal SF, Giovenazzo P, Hoover SE, Guzman-Novoa E, Currie RW, Wolf Veiga P,</font> <b>French SK</b><font size=3>, Conflitti IM, Pepinelli M, Borges D, Walsh EM, Bishop CA, Zayed A, Duffe J, Guarna MM, Foster LJ</font>. 2024. <a class="link" href="">Regional patterns and climatic predictors of viruses in honey bee (Apis mellifera) colonies over time</a>. <a class="link" href="">Scientific Reports</a>.</h3>
 <h2></h2><h3><font color=#86C5CB>9.</font> <font size=3>Wizenberg SB,</font> <b>French SK</b><font size=3>, Newburn LR, Pepinelli M, Conflitti IM, Moubony M, Ritchie C, Jamieson A, Richardson RT, Travas A, Imrit MA, Chihata M, Higo H, Common J, Walsh EM, Bixby M, Guarna MM, Pernal SF, Hoover SE, Currie RW, Giovenazzo P, Guzman-Novoa E, Borges D, Foster LJ, Zayed A</font>. 2024. <a class="link" href="https://academic.oup.com/pnasnexus/article/3/10/pgae440/7826695">Pollen foraging mediates exposure to dichotomous stressor syndromes in honey bees</a>. <a class="link" href="https://academic.oup.com/pnasnexus/article/3/10/pgae440/7826695">PNAS Nexus</a>.</h3>
 <h2></h2><h3><font color=#86C5CB>8.</font> <font size=3>Bixby M,</font> <b>French SK</b><font size=3>, Wizenberg SB, Jamieson A, Pepinelli M, Cunningham MM, Conflitti IM, Foster LJ, Zayed A, Guarna MM </font>. 2024. <a class="link" href="https://academic.oup.com/jee/advance-article/doi/10.1093/jee/toae227/7831284">Identifying and modeling the impact of neonicotinoid exposure on honey bee colony profit</a>. <a class="link" href="https://academic.oup.com/jee/advance-article/doi/10.1093/jee/toae227/7831284">Journal of Economic Entomology</a>.</h3>
@@ -203,7 +325,37 @@ text-align:left;
 <h2></h2><h3><font color=#86C5CB>2.</font> <b>French SK</b><font size=3>, McCauley SJ</font>. 2018. <a class="link" href="manuscripts/French_McCauley_2018.pdf">Canopy cover affects habitat selection by adult dragonflies</a>. <a class="link" href="https://link.springer.com/article/10.1007/s10750-018-3600-5">Hydrobiologia</a>.</h3>
 <h2></h2><h3><font color=#86C5CB>1.</font> <b>French SK</b><font size=3>, Ackerman JD</font>. 2014. <a class="link" href="manuscripts/French_Ackerman_2014.pdf">Responses of newly settled juvenile mussels to bed shear stress: implications for dispersal</a>. <a class="link" href="http://www.jstor.org/stable/10.1086/674983">Freshwater Science</a>.</h3>
 
-</div></div></div>
+
+
+
+</div></div>
+
+
+  
+<div class="news">
+  <div align="left">
+  <br><h3><i><u>2024</u></i>
+    <br><br><i>May 5th</i>
+    <br>Radio-Canada interview
+    <br><a class="link" href="https://ici.radio-canada.ca/nouvelle/2069895/abeille-polinisation-ruche-sante-stress">Le déclin de la santé des abeilles décodé une fois pour toutes?</a>
+<br><br><i>April 19th</i>
+  <br>Radio-Canada Ohdio interview
+  <br><a class="link" href="https://ici.radio-canada.ca/ohdio/premiere/emissions/le-matin-du-nord/segments/entrevue/493619/abeille-pesticide-parasite-etude-scientifique">Des pertes énormes dans les ruches de certains apiculteurs de l'île Manitoulin</a>
+<br><br><i>April 17th</i>
+  <br>York University News interview
+  <br>EN <a class="link" href="https://www.yorku.ca/news/2024/04/17/honey-bees-experience-multiple-health-stressors-out-in-the-field">Honey bees experience multiple health stressors out-in-the-field</a>
+  <br>FR <a class="link" href="https://www.yorku.ca/news/2024/04/03/les-abeilles-melliferes-sont-confrontees-a-de-multiples-facteurs-de-stress-qui-affectent-leur-sante">Les abeilles mellifères sont confrontées à de multiples facteurs de stress qui affectent leur santé</a>
+  <br><br><i>April 17th</i>
+  <br>New study out in Current Biology
+  <br><a class="link" href="https://authors.elsevier.com/c/1ixih3QW8S6EBM">Honey bee stressor networks are complex and dependent on crop and region</a>
+</h3></div></div>
+
+
+</div>
+  
+
+
+
 
 </body>
 </html>
